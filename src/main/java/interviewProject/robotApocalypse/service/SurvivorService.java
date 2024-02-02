@@ -7,21 +7,21 @@ import java.util.Optional;
 
 public interface SurvivorService {
 
-    public List<Survivor> getAllSurvivors();
-    public Optional<Survivor> getSurvivorById(Long id);
+     List<Survivor> getAllSurvivors();
+     Optional<Survivor> getSurvivorById(Long id);
 
-    public  Optional<List<Survivor>> getSurvivorByInfectionStatus(boolean infected);
+      Optional<List<Survivor>> getSurvivorByInfectionStatus(boolean infected);
 
-    public Survivor saveSurvivor(Survivor survivor);
+     Survivor saveSurvivor(Survivor survivor);
 
-    public Survivor updateSurvivor(Survivor survivor);
+     Survivor updateSurvivor(Survivor survivor);
 
-    public void flagSurvivorAsInfected(Long id);
+     void flagSurvivorAsInfected(Long id);
 
-    public double calculateInfectionPercentage();
+     double calculateInfectionPercentage();
 
-    public double calculateNonInfectedPercentage();
+     double calculateNonInfectedPercentage();
 
 
-    public void updateInfectionStatus(Long survivorId);
+     void updateInfectionStatus(Long survivorId);
 }
